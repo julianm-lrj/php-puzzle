@@ -9,7 +9,8 @@
 
 
 // Initial Variables
-$i = './input.txt'; 		//data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
+// $i = './input.txt'; 		//data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
+$i = 'test-input'; 		//data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
 $o = './result.txt'; 		//output result from code to file
 $r = 0;						//counter
 $z = "continue 1";

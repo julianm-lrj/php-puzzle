@@ -11,7 +11,8 @@
 
 // Pre-execution requirements
 session_start();				// Start session
-$i = './input.txt'; 			// Data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
+// $i = './input.txt'; 			// Data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
+$i = 'test-input'; 			// Data being parsed; curl https://dev2.lsquared.com/dev-lsquared-hub/storage/input.1.txt . 
 $o = './result.txt'; 			// Output result from code to file
 $_SESSION['result'] = 0;		// Valid string counter
 $_SESSION['current_line'] = 0;	// Initial array position
