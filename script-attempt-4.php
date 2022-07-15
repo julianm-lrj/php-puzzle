@@ -26,12 +26,13 @@ if(file_exists($i)){
 		$_SESSION['current_line']++;
 	}
 }
-session_destroy();																// Close Session
 $valid = "The valid number of strings in $i is " . $_SESSION['result'] . ".";	// Build CLI output
 $date = date('c');																// Build TimeStamp
 $log = $date . " - " . $valid . "\n";											// Build log string
 echo $valid;																	// Terminal Output
 file_put_contents("./result.log", $log, FILE_APPEND);							// Output to .log file
+session_destroy();																// Close Session
+
 
 function in_braket($c){
 	for ($d=1; $d <= count($c) ; $d+=2) { 
